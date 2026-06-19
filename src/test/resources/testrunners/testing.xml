@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="LoginSuite" thread-count="5" verbose="4"
+	parallel="tests">
+	<listeners>
+		<listener class-name="com.aventstack.chaintest.plugins.ChainTestListener" />
+		<listener class-name="com.qa.barclayes.listeners.TestAllureListener"/>
+		<listener class-name="com.qa.barclayes.listeners.AnnotationTransformer"/>
+	</listeners>
+
+
+	<test name="LoginTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.barclayes.tests.LoginTest" />
+		</classes>
+	</test>
+
+	<test name="AccountTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.barclayes.tests.AccountsTest" />
+		</classes>
+	</test>
+
+	<test name="ProductInfoTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.barclayes.tests.ProductInfoTest" />
+		</classes>
+	</test>
+
+	<!-- <test name="RegisterPageTest"> <parameter name="browser" value="firefox" 
+		/> <classes> <class name="com.qa.barclayes.tests.RegisterTest" /> </classes> 
+		</test> -->
+	<test name="ResultsTest">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.qa.barclayes.tests.SearchResultTest" />
+		</classes>
+	</test>
+
+</suite>
