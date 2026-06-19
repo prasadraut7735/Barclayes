@@ -9,4 +9,9 @@ public class AppConstants {
 																		 "My Orders",
 																		 "My Affiliate Account", 
 																		 "Newsletter");
+	
+	public static final List<String> EXPECTED_HEADER2 = List.of("My Account", 
+			 "My Orders",
+			 "My Affiliate Account", 
+			 "Newsletter");
 }
